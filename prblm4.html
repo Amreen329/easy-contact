@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Contact Form</title>
+
+    <style>
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #4facfe;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 35px 30px;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 12px;
+            background: #4facfe;
+            color: #ffffff;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #0077cc;
+            transform: translateY(-2px);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            .form-container {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Easy Contact Form</h1>
+
+    <div class="form-container">
+        <h2>Send Us Some Electronic Mail</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Company</label>
+            <input type="text" placeholder="Enter your company name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Message</label>
+            <textarea rows="4" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
